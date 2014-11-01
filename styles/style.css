@@ -521,6 +521,10 @@ a.list-group-item:hover {
 	margin-bottom: 50px;
 }
 
+.use-case .row {
+	display: flex;
+	align-items: center;
+}
 /* ---------------------------------------------------------------
 						Landing - Window animation
 --------------------------------------------------------------- */
