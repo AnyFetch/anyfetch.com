@@ -176,17 +176,27 @@ a {
 	height: 400px;
 }
 
+.intro-header.get {
+	height: 400px;
+	background-size: 10%, cover;
+}
+.intro-header.get>div>div>div>div>h3 {
+	color: #fff;
+	font-weight: 300;
+	margin-top: 50px;
+}
+
 .intro-header.min {
-	height: 200px;
+	height: 250px;
 	padding-top: 0px;
 	background-size: 10%, cover;
 	text-align: left;
 }
 
-.intro-header.min>div>div>div>div>h2 {
-	text-align: left;
+.intro-header.min>div>div>div>div>h3 {
 	color: #fff;
 	font-weight: 300;
+	margin-top: 50px;
 }
 
 .intro-message {
