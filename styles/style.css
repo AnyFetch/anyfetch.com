@@ -235,8 +235,8 @@ a {
 
 @media (min-width: 768px) {
 	.flex-centered {
-    display: flex;
-    align-items: center;
+		display: flex;
+		align-items: center;
 	}
 }
 
