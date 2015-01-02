@@ -147,7 +147,6 @@ a {
 
 .use-case-thumbnail {
 	text-align: center;
-	padding-top: 50px;
 }
 
 .use-case-thumbnail > img {
@@ -167,7 +166,7 @@ a {
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
-	margin-top: 50px;
+	margin-top: 70px;
 	color: #f8f8f8;
 	background-color: #14A8E1;
 	background: url(../images/svg/anyfetch_icon_raw.svg) no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
@@ -176,17 +175,27 @@ a {
 	height: 400px;
 }
 
+.intro-header.get {
+	height: 400px;
+	background-size: 10%, cover;
+}
+.intro-header.get>div>div>div>div>h3 {
+	color: #fff;
+	font-weight: 300;
+	margin-top: 50px;
+}
+
 .intro-header.min {
-	height: 200px;
+	height: 250px;
 	padding-top: 0px;
 	background-size: 10%, cover;
 	text-align: left;
 }
 
-.intro-header.min>div>div>div>div>h2 {
-	text-align: left;
+.intro-header.min>div>div>div>div>h3 {
 	color: #fff;
 	font-weight: 300;
+	margin-top: 50px;
 }
 
 .intro-message {
@@ -224,6 +233,20 @@ a {
 	padding-left: 70px;
 }
 
+@media (min-width: 768px) {
+	.flex-centered {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width: 992px) {
+	.intro-message > h1 {
+		font-size: 4em;
+	}
+}
+
+
 @media (max-width: 767px) {
 	.intro-message {
 		padding-bottom: 15%;
@@ -232,6 +255,10 @@ a {
 
 	.intro-message > h1 {
 		font-size: 3em;
+	}
+
+	footer {
+		text-align: center;
 	}
 
 	ul.intro-social-buttons > li {
@@ -290,60 +317,12 @@ a {
 	/*float: left;*/
 }
 
-.banner {
-	padding: 100px 0;
-	color: #f8f8f8;
-	background-color: #2F363C;
-	background-size: cover;
-}
-
-.banner h2 {
-	margin: 0;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-	font-size: 3em;
-}
-
-.banner ul {
-	margin-bottom: 0;
-}
-
-.banner-social-buttons {
-	float: right;
-	margin-top: 0;
-}
-
 @media (max-width: 1199px) {
-	ul.banner-social-buttons {
-		float: left;
-		margin-top: 15px;
-	}
-
 	.biography {
 		padding-left: 0px;
 	}
 }
 
-@media (max-width: 767px) {
-	.banner h2 {
-		margin: 0;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-		font-size: 3em;
-	}
-
-	ul.banner-social-buttons > li {
-		display: block;
-		margin-bottom: 20px;
-		padding: 0;
-	}
-
-	ul.banner-social-buttons > li:last-child {
-		margin-bottom: 0;
-	}
-
-	footer {
-		text-align: center;
-	}
-}
 
 .highlight {
 	font-weight: 800;
@@ -521,10 +500,6 @@ a.list-group-item:hover {
 	margin-bottom: 50px;
 }
 
-.use-case .row {
-	display: flex;
-	align-items: center;
-}
 /* ---------------------------------------------------------------
 						Landing - Window animation
 --------------------------------------------------------------- */
@@ -712,7 +687,7 @@ a.list-group-item:hover {
 .carousel .next {left:0;opacity:1;z-index:1;}
 
 .carousel-indicators {
-	top: -10px;
+	top: -30px;
 }
 
 .carousel-indicators li {
