@@ -61,9 +61,9 @@
 					<li><a href="/" class="navbar-title">Home</a></li>
 					{% endif %}
 					{% if page.path == "products.html" %}
-					<li class="hidden-sm active"><a href="/products.html" class="navbar-title">Products</a></li>
+					<li class="hidden-s active"><a href="/products.html" class="navbar-title">Products</a></li>
 					{% else %}
-					<li class="hidden-sm"><a href="/products.html" class="navbar-title">Products</a></li>
+					<li class="hidden-s"><a href="/products.html" class="navbar-title">Products</a></li>
 					{% endif %}
 					<!-- {% if page.path == "integrate.html" %}
 					<li class="hidden-sm active"><a href="/integrate.html" class="navbar-title">Integrate</a></li>
@@ -79,17 +79,17 @@
 					<li class="hidden-sm active"><a href="/about-us.html" class="navbar-title">About us</a></li>
 					{% else %}
 					<li class="hidden-sm"><a href="/about-us.html" class="navbar-title">About us</a></li>
-					{% endif %} -->
-					{% if page.path == "use.html" or page.path == "integrate.html" or page.path == "develop.html" or page.path == "about-us.html" %}
-					<li class="visible-sm dropdown active">
+					{% endif %}
+					{% if page.path == "products.html" or page.path == "integrate.html" or page.path == "develop.html" or page.path == "about-us.html" %}
+					<li class="visible-s dropdown active">
 					{% else %}
-					<li class="visible-sm dropdown">
+					<li class="visible-s dropdown">
 					{% endif %}
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="/products.html">Products</a></li>
+							<li><a href="/products.html" class="navbar-title">Products</a></li>
 						</ul>
-					</li>
+					</li> -->
 					<li><a href="get-started.html" class="btn btn-default btn-lg"><span class="network-name">Get started</span></a></li>
 					</ul>
 				</div>
