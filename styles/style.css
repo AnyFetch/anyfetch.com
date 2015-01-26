@@ -119,6 +119,14 @@ a {
 	font-size: 15px;
 }
 
+.white-font > p {
+	color: white;
+}
+
+.white-font > h3 {
+	color: white;
+}
+
 /* Button in navbar */
 .navbar-default .navbar-nav>li>.btn {
 	margin-left: 10px;
@@ -381,6 +389,14 @@ a {
 .content-section-b {
 	color: #47525d;
 	background-color: white;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 30px 0;
+}
+
+.content-section-c {
+	color: #47525d;
+	background-color: #14A8E1;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
 	padding: 30px 0;
