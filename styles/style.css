@@ -39,6 +39,10 @@ font-size: 3.5em;
 .intro-landing>h3{
 	font-size: 1.4em;
 }
+.intro-landing>h2{
+	padding-top: 20px;
+	color: white;
+}
 
 hr {
 	width: 60%;
@@ -199,7 +203,7 @@ a {
 	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
 	background-size: 20%, cover;
 	text-align: center;
-	height: 840px;
+	height: 880px;
 }
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
