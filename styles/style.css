@@ -29,8 +29,9 @@ strong {
 }
 
 .intro-landing > img{
-	width: 250px;
 	margin-top: 50px;
+	width: 100%;
+	/*margin-top: 50px;*/
 }
 .intro-landing > h1{
 font-size: 3.5em;
@@ -183,7 +184,7 @@ a {
 	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
 	background-size: 20%, cover;
 	text-align: center;
-	height: 750px;
+	height: 800px;
 }
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -279,7 +280,7 @@ a {
 		font-size: 3em;
 	}
 	.intro-home{
-		height: 900px;
+		height: 650px;
 	}
 
 	footer {
