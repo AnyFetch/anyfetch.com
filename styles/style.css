@@ -175,6 +175,10 @@ a {
 	margin-left: 60px;
 }
 
+.img-phone{
+	max-height: 400px;
+}
+
 .intro-home {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
