@@ -203,7 +203,7 @@ a {
 	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
 	background-size: 20%, cover;
 	text-align: center;
-	height: 880px;
+	height: 900px;
 }
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -297,7 +297,7 @@ a {
 		font-size: 4em;
 	}
 	.intro-home{
-		height: 700px;
+		height: 740px;
 	}
 }
 
@@ -315,7 +315,7 @@ a {
 		font-size: 3em;
 	}
 	.intro-home{
-		height: 650px;
+		height: 670px;
 	}
 
 	footer {
