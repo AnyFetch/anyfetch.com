@@ -179,6 +179,17 @@ a {
 	max-height: 400px;
 }
 
+.blue-font{
+	color: #f8f8f8;
+	background-color: #14A8E1;
+	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
+}
+
+.blue-font>div>div>div>div>h3 {
+	color: #fff;
+	font-weight: 300;
+}
+
 .intro-home {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
