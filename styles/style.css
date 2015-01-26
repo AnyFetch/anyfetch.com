@@ -316,6 +316,17 @@ a {
 	letter-spacing: 2px;
 }
 
+.intro-where{
+	color:#47525d;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.intro-what{
+	font-size: 1em;
+	color: #aaaaaa;
+}
+
 .content-section-a {
 	color: #fff;
 	background-color: #66C4E9;
@@ -323,7 +334,9 @@ a {
 }
 
 .content-section-b {
-	color: blue;
+
+	
+	color: #47525d;
 	background-color: white;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
