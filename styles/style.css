@@ -20,6 +20,13 @@ strong {
 	font-weight: 600;
 }
 
+.whatis{
+	font-style: italic;
+}
+.whois{
+	font-style: bold;
+}
+
 .content {
 	margin-top: 100px;
 }
@@ -35,9 +42,6 @@ strong {
 }
 .intro-landing > h1{
 font-size: 3.5em;
-}
-.intro-landing>h3{
-	font-size: 1.4em;
 }
 .intro-landing>h2{
 	padding-top: 20px;
@@ -211,7 +215,7 @@ a {
 	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
 	background-size: 20%, cover;
 	text-align: center;
-	height: 900px;
+	height: 950px;
 }
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -223,6 +227,11 @@ a {
 	background-size: 20%, cover;
 	text-align: center;
 	height: 750px;
+}
+
+.testimony{
+	font-size: 1.8em;
+	font-weight: 200.
 }
 
 .intro-header.get {
@@ -305,7 +314,10 @@ a {
 		font-size: 4em;
 	}
 	.intro-home{
-		height: 780px;
+		height: 850px;
+	}
+	.testimony{
+	font-size: 1.7em;
 	}
 }
 
@@ -323,7 +335,10 @@ a {
 		font-size: 3em;
 	}
 	.intro-home{
-		height: 710px;
+		height: 790px;
+	}
+	.testimony{
+	font-size: 1.4em;
 	}
 
 	footer {
