@@ -208,14 +208,12 @@ a {
 
 .intro-home {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 50px;
 	margin-top: 70px;
 	color: #f8f8f8;
 	background-color: #14A8E1;
 	background: no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
 	background-size: 20%, cover;
 	text-align: center;
-	height: 950px;
 }
 .intro-header {
 	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -233,8 +231,9 @@ a {
 	font-size: 1.8em;
 	font-weight: 200.
 }
-.testimony-small{
-	font-size: 1.6em;
+.testimony-small {
+	margin-top: 5px;
+	font-size: 1em;
 	font-weight: 200.
 }
 
@@ -310,15 +309,12 @@ a {
 	.flex-centered {
 		display: flex;
 		align-items: center;
-	}	
+	}
 }
 
 @media (max-width: 992px) {
 	.intro-message > h1 {
 		font-size: 4em;
-	}
-	.intro-home{
-		height: 850px;
 	}
 	.testimony{
 	font-size: 1.7em;
@@ -340,9 +336,6 @@ a {
 
 	.intro-message > h1 {
 		font-size: 3em;
-	}
-	.intro-home{
-		height: 790px;
 	}
 	.testimony{
 	font-size: 1.4em;
