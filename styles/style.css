@@ -233,6 +233,10 @@ a {
 	font-size: 1.8em;
 	font-weight: 200.
 }
+.testimony-small{
+	font-size: 1.6em;
+	font-weight: 200.
+}
 
 .intro-header.get {
 	height: 400px;
@@ -319,6 +323,9 @@ a {
 	.testimony{
 	font-size: 1.7em;
 	}
+	.testimony-small{
+	font-size: 1.5em;
+	}
 }
 
 
@@ -339,6 +346,9 @@ a {
 	}
 	.testimony{
 	font-size: 1.4em;
+	}
+	.testimony-small{
+	font-size: 1.2em;
 	}
 
 	footer {
