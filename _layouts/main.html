@@ -11,9 +11,8 @@
 
 	<link rel="stylesheet" href="/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="/styles/style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
-  	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,7 +38,7 @@
 
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-anyfetch navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -48,19 +47,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="./"><img src="/images/svg/anyfetch_icon.svg" alt="AnyFetch Icon" /> Any<b>Fetch</b></a>
+				<a class="navbar-brand" href="./"><img src="/images/anyfetch-icon-white.png" alt="AnyFetch Icon" /> Any<b>Fetch</b></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					{% if page.path == "index.html" %}
-					<li class="active"><a href="/" class="navbar-title">Home</a></li>
-					{% else %}
-					<li><a href="/" class="navbar-title">Home</a></li>
-					{% endif %}
 					<li><a href="https://manager.anyfetch.com/sign_in" class="navbar-title">Sign in</a></li>
-					<li><a href="https://manager.anyfetch.com/sign_up" class="btn btn-default btn-lg"><span class="network-name">Sign up</span></a></li>
+					<li><a href="https://manager.anyfetch.com/sign_up" class="btn btn-anyfetch"><span class="network-name">Sign up</span></a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -72,7 +66,8 @@
 
 		<footer class="footer">
 			<div class="container">
-				<div class="row">
+			AnyFetch © 2015
+<!-- 				<div class="row">
 					<div class="col-xs-4 col-sm-2 col-sm-offset-3">
 						<h5>Developers</h5>
 						<ul class="list-unstyled">
@@ -103,7 +98,7 @@
 					<div class="col-sm-12 text-center">
 						<p class="copyright text-muted small">&copy; AnyFetch 2015. All Rights Reserved</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

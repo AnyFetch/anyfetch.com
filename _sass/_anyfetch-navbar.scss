@@ -1,0 +1,95 @@
+@import "fonts";
+
+// TODO: make this with the sass version of bootstrap
+
+$bgDefault      : transparent;
+$bgHighlight    : transparent;
+$colDefault     : #ecf0f1;
+$colHighlight   : #ecdbff;
+$dropDown       : false;
+$navbarHeight   : 56px;
+$navbarPadding  : 4px;
+
+.navbar-anyfetch {
+  position: absolute;
+  margin-top: 20px;
+  height: $navbarHeight;
+  min-height: $navbarHeight;
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  font-family: $font-helvetica-neue;
+
+  .navbar-brand {
+    height: $navbarHeight;
+    color: $colDefault;
+    padding: 0;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        padding-top: $navbarPadding;
+        padding-bottom: $navbarPadding;
+        color: $colDefault;
+
+        &.btn-anyfetch {
+          margin-left: 15px;
+          border-radius: 35px;
+          background-color: white;
+          color: #1fabdb;
+          font-size: 13px;
+          font-weight: 700;
+          border: 1px solid white;
+        }
+
+        &:hover,  &:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li > a {
+            color: $colDefault;
+            &:hover,  &:focus {
+              color: $colHighlight;
+              background-color: $bgHighlight; }}
+          .divider {
+            background-color: $bgHighlight;}}}
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+        font-weight: bold; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}
+}
+
+@media (max-width: 767px) {
+  .navbar-anyfetch .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
