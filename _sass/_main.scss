@@ -61,6 +61,7 @@ body, html {
   border: 1px solid white;
   background-color: transparent;
   > img {
+    height: 1em;
     line-height: 10px;
     margin: -3px 4px 0 0;
   }
@@ -79,6 +80,7 @@ body, html {
   border: 1px solid white;
   background-color: transparent;
   > img {
+    height: 1em;
     line-height: 10px;
     margin: -3px 4px -2px 0;
   }
@@ -303,7 +305,8 @@ body, html {
   }
 
   img {
-    max-width: 100%;
+    max-width: 80%;
+    width: 80%;
   }
 }
 
