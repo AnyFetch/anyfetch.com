@@ -48,6 +48,15 @@ body, html {
   }
 }
 
+.button-transparent {
+  @extend .button;
+  border: 1px solid white;
+  background-color: transparent;
+  &:hover {
+    background-color: rgba(white, .1);
+  }
+}
+
 .button-blue {
   @extend .button;
   background-color: #26aae0;
@@ -57,35 +66,45 @@ body, html {
 }
 
 .button-chrome {
-  @extend .button;
-  border: 1px solid white;
-  background-color: transparent;
+  @extend .button-transparent;
   > img {
     height: 1em;
     line-height: 10px;
     margin: -3px 4px 0 0;
   }
-  &:hover {
-    background-color: rgba(white, .1);
-    > img {
-      transform: rotate(1turn); // Cool effect, yay !
-      -webkit-transform: rotate(1turn);
-      transition: all .3s;
-    }
+  &:hover > img {
+    transform: rotate(1turn); // Cool effect, yay !
+    -webkit-transform: rotate(1turn);
+    transition: all .3s;
   }
 }
 
 .button-salesforce {
-  @extend .button;
-  border: 1px solid white;
-  background-color: transparent;
+  @extend .button-transparent;
   > img {
     height: 1em;
     line-height: 10px;
     margin: -3px 4px -2px 0;
   }
-  &:hover {
-    background-color: rgba(white, .1);
+}
+
+.anyfetch-404 {
+  @extend .intro;
+  a {
+    margin-top: 5em;
+  }
+}
+
+.press {
+  @extend .intro;
+  h1 {
+    margin-bottom: 3em;
+  }
+  ol {
+    text-align: left;
+  }
+  a {
+    color: white;
   }
 }
 
