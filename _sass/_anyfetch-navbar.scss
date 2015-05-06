@@ -4,10 +4,10 @@
 
 $bgDefault      : transparent;
 $bgHighlight    : transparent;
-$colDefault     : #ecf0f1;
-$colHighlight   : #ecdbff;
+$colDefault     : white;
+$colHighlight   : white;
 $dropDown       : false;
-$navbarHeight   : 56px;
+$navbarHeight   : 32px;
 $navbarPadding  : 4px;
 
 .navbar-anyfetch {
@@ -20,6 +20,9 @@ $navbarPadding  : 4px;
   font-family: $font-helvetica-neue;
 
   .navbar-brand {
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
     height: $navbarHeight;
     color: $colDefault;
     padding: 0;
@@ -35,17 +38,18 @@ $navbarPadding  : 4px;
   .navbar-nav {
     > li {
       > a {
+        float: right;
         padding-top: $navbarPadding;
         padding-bottom: $navbarPadding;
         color: $colDefault;
+        font-size: 13px;
+        font-weight: 700;
 
         &.btn-anyfetch {
           margin-left: 15px;
           border-radius: 35px;
           background-color: white;
           color: #1fabdb;
-          font-size: 13px;
-          font-weight: 700;
           border: 1px solid white;
         }
 
@@ -80,7 +84,10 @@ $navbarPadding  : 4px;
       background-color: $colDefault; }}
   .navbar-collapse,
   .navbar-form {
-    border-color: $colDefault; }
+    border: none;
+    box-shadow: none;
+    border-color: $colDefault;
+  }
   .navbar-link {
     color: $colDefault;
     &:hover {
