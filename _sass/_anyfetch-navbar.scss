@@ -20,17 +20,23 @@ $navbarPadding  : 4px;
   font-family: $font-helvetica-neue;
 
   .navbar-brand {
-    margin-top: 8px;
     margin-left: 15px;
-    margin-bottom: 8px;
     height: $navbarHeight;
     color: $colDefault;
     padding: 0;
     &:hover, &:focus {
       color: $colHighlight;
     }
-    img {
-      display: inline-block;
+
+    &.anyfetch-logo {
+      display: table;
+      img {
+        width: 28px;
+      }
+      img, span {
+        vertical-align: middle;
+        display: table-cell;
+      }
     }
   }
   .navbar-text {

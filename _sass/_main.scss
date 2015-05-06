@@ -115,7 +115,6 @@ body, html {
     .subtitle {
       font-size: 1em;
       font-weight: 300;
-      line-height: 21px;
     }
 
     .buttons {
@@ -171,8 +170,6 @@ body, html {
   width: 100%;
   background-color: #67c3ee;
   text-align: center;
-  padding-top: $container-padding;
-  padding-bottom: $container-padding;
 
   .anyfetch-badge {
     border-radius: 50px;
@@ -282,8 +279,6 @@ body, html {
 
 .features {
   width: 100%;
-  padding-top: $container-padding;
-  padding-bottom: $container-padding;
   text-align: center;
 
   h2 {
@@ -296,15 +291,15 @@ body, html {
 
   h4 {
     color: #2673ba;
-    font-size: 19px;
+    font-size: 1.1em;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 1.4em;
   }
 
   p {
     color: #6b6b6b;
     font-weight: 300;
-    line-height: 24px;
+    font-size: .9em;
   }
 
   img {
@@ -312,26 +307,10 @@ body, html {
   }
 }
 
-.feedback {
-  width: 100%;
-  padding-top: $container-padding;
-  padding-bottom: $container-padding;
-  background-color: #3db1b0;
-  text-align: center;
-
-  h2 {
-    color: white;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 50px;
-  }
-}
-
 .signup-final {
   padding-top: $container-padding / 2;
   padding-bottom: $container-padding / 2;
 
-  font-weight: 300;
   text-align: center;
   color: white;
   background-color: #5382c7;
