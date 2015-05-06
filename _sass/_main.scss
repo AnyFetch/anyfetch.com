@@ -13,12 +13,25 @@ body, html {
   min-height: 100%;
   margin: 0;
   padding: 0;
+
+  font-family: $font-helvetica-neue;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
+.anyfetch-container {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding-top: $container-padding;
+  padding-bottom: $container-padding;
+}
 
 // TODO: refactor button styles (DRY)
 .button {
+  color: white;
   text-align: center;
   min-width: $button-width;
   display: inline-block;
@@ -26,9 +39,7 @@ body, html {
   border-radius: 3px;
   padding: 0.45em;
 
-  color: white;
-  font-family: $font-helvetica-neue;
-  font-size: 17px;
+  font-size: .95em;
   font-weight: 700;
 
   &:hover, &:active, &:focus {
@@ -40,6 +51,9 @@ body, html {
 .button-blue {
   @extend .button;
   background-color: #26aae0;
+  &:hover {
+    background-color: rgba(#26aae0, .9);
+  }
 }
 
 .button-chrome {
@@ -79,12 +93,12 @@ body, html {
   min-height: 800px;
   background-color: #1fabdb;
   background-image: linear-gradient(4deg, #44bcef 0%, #172d6d 100%);
+  text-align: center;
 
-  .intro-container {
+  > .container {
     padding-top: 140px;
-    color: white;
-    text-align: center;
 
+    width: 100%;
     height: 100%;
     overflow: hidden;
     display: table;
@@ -95,12 +109,11 @@ body, html {
 
     .title {
       font-family: $font-avenir;
-      font-size: 40px;
+      font-size: 2.2em;
       font-weight: 500;
     }
     .subtitle {
-      font-family: $font-helvetica-neue;
-      font-size: 18px;
+      font-size: 1em;
       font-weight: 300;
       line-height: 21px;
     }
@@ -109,10 +122,7 @@ body, html {
       margin-top: 60px;
       margin-bottom: 60px;
       .button {
-        margin-right: 12px;
-        &:last-child {
-          margin-right: 0;
-        }
+        margin: 12px 6px;
       }
     }
 
@@ -121,7 +131,12 @@ body, html {
       min-width: 100%;
       height: 100%;
       min-height: 100%;
-      background-image: url(/images/screenshot.png);
+      background-image: url(/images/timeline.png);
+      max-height: 270px; // timeline image height
+      @media (min-width: 500px) {
+        max-height: 500px; // screenshot image height
+        background-image: url(/images/screenshot.png);
+      }
       background-position: bottom center;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -132,9 +147,6 @@ body, html {
 
 .works-with {
   text-align: center;
-  font-family: $font-helvetica-neue;
-  font-size: 18px;
-  line-height: 40px;
   color: #13416c;
   font-weight: 400;
   padding-top: $container-padding / 2;
@@ -143,6 +155,7 @@ body, html {
   p {
     margin: 0;
   }
+
   span {
     color: #1fabdb;
     font-weight: 700;
@@ -161,22 +174,27 @@ body, html {
   padding-top: $container-padding;
   padding-bottom: $container-padding;
 
-  .badge {
-    @media (min-width: 766px) {
-      min-width: 250px;
-    }
-    @media (max-width: 767px) {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+  .anyfetch-badge {
     border-radius: 50px;
     background-color: white;
     color: #5d6b9f;
 
-    font-family: $font-helvetica-neue;
-    font-size: 18px;
     font-weight: 600;
-    line-height: 34px;
+    font-size: 1em;
+    line-height: 2em;
+    display: inline-block;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+
+    padding: 0 1.2em;
+
+    @media (min-width: 768px) {
+      min-width: 250px;
+    }
+    @media not all and (min-width: 768px) {
+      font-size: .7em;
+    }
   }
 
   table {
@@ -200,20 +218,18 @@ body, html {
   background-color: #5382c7;
   padding-top: $container-padding / 2;
   padding-bottom: $container-padding / 2;
+  text-align: left;
 
-  color: white;
-  font-family: $font-helvetica-neue;
-  font-size: 18px;
-  font-weight: 300;
-
-  .signup-container {
+  > .container {
     position: relative;
     display: table;
+    vertical-align: middle;
 
     p {
       display: table-cell;
       width: 100%;
       margin: 0;
+      padding-right: 2em;
     }
 
     span.arrow {
@@ -223,11 +239,36 @@ body, html {
       width: $arrow-size;
       height: $arrow-size;
       display: block;
-      position: absolute;
-      right: $button-width / 2;
+
       top: -($container-padding / 2) - ($arrow-size / 2);
+      position: absolute;
+      margin: auto;
+
+      right: $button-width / 2;
+
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
+    }
+
+    @media (max-width: 767px) {
+      span.arrow {
+        right: 0;
+        left: 0;
+      }
+
+      .signup-button {
+        text-align: center;
+        margin-top: .4em;
+        margin-bottom: 1em;
+      }
+
+      .col-sm-9 {
+        text-align: center;
+      }
+    }
+
+    .signup-button.hidden-xs a {
+      float: right;
     }
   }
 }
@@ -236,10 +277,6 @@ body, html {
   width: 100%;
   padding-top: $container-padding;
   padding-bottom: $container-padding;
-
-  font-family: $font-helvetica-neue;
-  font-size: 18px;
-  font-weight: 300;
   text-align: center;
 
   h2 {
@@ -259,9 +296,12 @@ body, html {
 
   p {
     color: #6b6b6b;
-    font-size: 18px;
     font-weight: 300;
     line-height: 24px;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 
@@ -270,10 +310,6 @@ body, html {
   padding-top: $container-padding;
   padding-bottom: $container-padding;
   background-color: #3db1b0;
-
-  font-family: $font-helvetica-neue;
-  font-size: 18px;
-  font-weight: 300;
   text-align: center;
 
   h2 {
@@ -288,8 +324,6 @@ body, html {
   padding-top: $container-padding / 2;
   padding-bottom: $container-padding / 2;
 
-  font-family: $font-helvetica-neue;
-  font-size: 18px;
   font-weight: 300;
   text-align: center;
   color: white;

@@ -24,7 +24,12 @@ $navbarPadding  : 4px;
     color: $colDefault;
     padding: 0;
     &:hover, &:focus {
-      color: $colHighlight; }}
+      color: $colHighlight;
+    }
+    img {
+      display: inline-block;
+    }
+  }
   .navbar-text {
     color: $colDefault; }
   .navbar-nav {
