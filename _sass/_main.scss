@@ -108,6 +108,13 @@ body, html {
   }
 }
 
+.contact {
+  @extend .intro;
+  .header-group {
+    margin-bottom: 3em;
+  }
+}
+
 .intro {
   width: 100%;
   height: 100%;
@@ -340,4 +347,11 @@ body, html {
 
 footer {
   @extend .signup-final;
+  a {
+    color: white;
+    &:hover {
+      color: rgba(white, .8);
+      text-decoration: none;
+    }
+  }
 }
